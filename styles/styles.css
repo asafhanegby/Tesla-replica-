@@ -1,0 +1,161 @@
+html{
+    position:relative;
+    height:100%;
+    
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    height:100%;
+    width:100%;
+    margin:0; 
+}
+
+.body-wrapper{
+    background-image:url("../images/teslas.jpg");
+    height:100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+/* Navigation-bar */
+.body-wrapper >.heading-wrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:15px 140px;
+    margin:0;
+    
+}
+/* left-side */
+.body-wrapper> .heading-wrapper >.left-side{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.body-wrapper> .heading-wrapper >.left-side > .logo img{
+    width:120px;
+    margin-right:35px;
+}
+.body-wrapper> .heading-wrapper >.left-side > .nav-items ul{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+.body-wrapper> .heading-wrapper >.left-side > .nav-items ul li a{
+    color:#ffffff;
+    margin: 0 15px;
+    text-decoration:none;
+    font-size:0.8em;
+   
+}
+
+
+/* Right-side */
+.body-wrapper> .heading-wrapper >.right-side >.nav-items ul{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    list-style: none;
+    
+}
+.body-wrapper> .heading-wrapper >.right-side > .nav-items ul{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+.body-wrapper> .heading-wrapper >.right-side > .nav-items ul li a{
+    color:#ffffff;
+    margin: 0 15px;
+    text-decoration:none;
+    font-size:0.7em;
+}
+
+.main-wrapper{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top:180px;
+}
+
+.main-wrapper >.logo svg{
+    width:200px;
+}
+.main-wrapper >.center{
+    color:#ffffff;
+    text-align:center;
+}
+.main-wrapper >.center >p:nth-child(1){
+    font-size:1.4em;
+    margin-bottom:0px;
+    margin-top:7px;
+}
+.main-wrapper >.center >p:nth-child(2){
+    font-size:0.8em;
+    margin-top:3px;
+}
+.main-wrapper >.buttons{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.main-wrapper >.buttons >.button{
+    background-color:black;
+    margin:0 14px;
+    padding:5px 20px;
+    border-radius:3px;
+}
+.main-wrapper >.buttons >.button a{
+    color:#ffffff;
+    font-size:0.8em;
+    text-decoration:none;
+}
+
+/* footer */
+.footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    margin:0;
+    padding:0;
+    
+}
+.footer-wrapper{
+    margin-top:100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:0;
+    margin-bottom:0;
+    padding-top:40px;
+}
+
+.footer-wrapper >.nav-items ul {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    list-style:none;
+    margin:10px;
+
+}
+.footer-wrapper >.nav-items ul li{
+    margin:0 10px;
+    font-size:0.7em;
+}
+.footer-wrapper  >.logo{
+    display:flex;
+}
+.footer-wrapper img{
+    width:20px;
+    align-self: center;
+}
