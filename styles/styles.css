@@ -1,23 +1,33 @@
 html{
     position:relative;
     height:100%;
-    
     margin:0;
     padding:0;
+    
 }
 body{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
     height:100%;
     width:100%;
-    margin:0; 
-}
-
-.body-wrapper{
+    margin:0;
     background-image:url("../images/teslas.jpg");
-    height:100%;
+    min-height:100%;
+    background-attachment: fixed;
     background-position:center;
     background-repeat: no-repeat;
     background-size:cover;
+ 
+  
+}
+
+.body-wrapper{
+ 
+    position:relative;
+    margin:0;
+    padding:0;
+     min-height:100%;
+ 
+   
 }
 
 /* Navigation-bar */
@@ -34,6 +44,10 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+}
+.body-wrapper> .heading-wrapper >.left-side > .logo{
+    display:flex;
+    align-items:center; 
 }
 .body-wrapper> .heading-wrapper >.left-side > .logo img{
     width:120px;
@@ -113,7 +127,14 @@ body{
     margin:0 14px;
     padding:5px 20px;
     border-radius:3px;
+    border:1px solid transparent;
+    transition:0.5s;
 }
+.main-wrapper >.buttons >.button:hover{
+    border:1px solid white;
+}
+
+
 .main-wrapper >.buttons >.button a{
     color:#ffffff;
     font-size:0.8em;
@@ -125,6 +146,7 @@ body{
     position:absolute;
     bottom:0;
     width:100%;
+    
     margin:0;
     padding:0;
     
@@ -136,17 +158,22 @@ body{
     align-items:center;
     padding:0;
     margin-bottom:0;
-    padding-top:40px;
+    
 }
 
-.footer-wrapper >.nav-items ul {
+.footer-wrapper >.nav-items ul  {
     display:flex;
     justify-content: center;
     align-items:center;
-    color:white;
+    
     list-style:none;
     margin:10px;
 
+}
+.footer-wrapper >.nav-items ul a{
+    color:white;
+    text-decoration:none;
+    font-size:1em;
 }
 .footer-wrapper >.nav-items ul li{
     margin:0 10px;
@@ -155,7 +182,15 @@ body{
 .footer-wrapper  >.logo{
     display:flex;
 }
+.footer-wrapper  > .logo a{
+    align-self: center;
+    margin:auto;
+    padding:0;
+}
+.footer-wrapper  > .logo a{
+    display:flex;
+}
 .footer-wrapper img{
     width:20px;
-    align-self: center;
+    align-self:center;
 }
